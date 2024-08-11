@@ -34,7 +34,7 @@ spec:
               memory: "128Mi"
               cpu: "500m"
       nodeSelector:
-        zone: us-east-2a
+       topology.kubernetes.io/zone: us-east-2a
       volumes: 
         - name: vpro-db-data 
           awsElasticBlockStore: 
